@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.example.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<name>Scan</name>
+<icon src="icon.png"/>
+	<plugin name = "phonegap-plugin-barcodescanner-master" />
+	<config-file target="AndroidManifest.xml" parent="/*" mode="merge">
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
+</config-file>
+	</widget>
